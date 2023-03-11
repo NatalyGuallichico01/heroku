@@ -7,6 +7,7 @@ use Model\Usuario;
 
 class LoginController{
     public  static function login(Router $router){
+        session_start();
         
         $alertas=[];
 
@@ -63,7 +64,7 @@ class LoginController{
 
      
     public  static function olvidarPassword(Router $router){
-
+        session_start();
         $alertas=[];
 
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
@@ -99,7 +100,7 @@ class LoginController{
     }
 
     public  static function recuperarPassword(Router $router){
-
+        session_start();
         $alertas=[];
         $error=false;
 
@@ -142,6 +143,7 @@ class LoginController{
     }
 
     public  static function crearCuenta(Router $router){
+        session_start();
         $usuario=new Usuario;
 
         //ALERTAS VACIAS
@@ -186,10 +188,12 @@ class LoginController{
     }
 
     public static function mensaje (Router $router){
+        session_start();
         $router->render('auth/mensaje');
     }
 
     public static function confirmarCuenta(Router $router){
+        session_start();
 
         $alertas=[];
 

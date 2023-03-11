@@ -143,7 +143,7 @@ class LoginController{
     }
 
     public  static function crearCuenta(Router $router){
-        session_start();
+        
         $usuario=new Usuario;
 
         //ALERTAS VACIAS
@@ -188,12 +188,12 @@ class LoginController{
     }
 
     public static function mensaje (Router $router){
-        session_start();
+        
         $router->render('auth/mensaje');
     }
 
     public static function confirmarCuenta(Router $router){
-        session_start();
+        
 
         $alertas=[];
 

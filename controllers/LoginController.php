@@ -7,7 +7,7 @@ use Model\Usuario;
 
 class LoginController{
     public  static function login(Router $router){
-        //session_start();
+        
         
         $alertas=[];
 
@@ -64,7 +64,7 @@ class LoginController{
 
      
     public  static function olvidarPassword(Router $router){
-        session_start();
+        
         $alertas=[];
 
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
@@ -100,7 +100,7 @@ class LoginController{
     }
 
     public  static function recuperarPassword(Router $router){
-        session_start();
+        
         $alertas=[];
         $error=false;
 

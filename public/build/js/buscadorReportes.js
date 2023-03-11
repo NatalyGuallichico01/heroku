@@ -1,0 +1,1 @@
+function startApp(){searchToDate()}function searchToDate(){console.log("desde buscar por fecha")}document.addEventListener("DOMContentLoaded",(function(){startApp()}));

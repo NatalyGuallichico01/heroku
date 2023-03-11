@@ -7,7 +7,7 @@ use Model\Usuario;
 
 class LoginController{
     public  static function login(Router $router){
-        session_start();
+        //session_start();
         
         $alertas=[];
 
